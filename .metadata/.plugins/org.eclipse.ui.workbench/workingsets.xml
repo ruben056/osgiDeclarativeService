@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.pde.ui.pluginWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425408344571_1" label="services" name="services">
+<item factoryID="org.eclipse.pde.ui.elementFactory" org.eclipse.pde.workingSetKey="org.eclipse.osgi"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425228431492_0" label="Window Working Set" name="Aggregate for window 1425228431491"/>
+<mruList name="services"/>
+</workingSetManager>

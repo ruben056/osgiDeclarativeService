@@ -1,0 +1,75 @@
+package org.eclipsercp.hyperbola;
+
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.jface.viewers.TreeViewer;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.model.BaseWorkbenchContentProvider;
+import org.eclipse.ui.model.WorkbenchLabelProvider;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipsercp.hyperbola.model.Contact;
+import org.eclipsercp.hyperbola.model.ContactsEntry;
+import org.eclipsercp.hyperbola.model.ContactsGroup;
+import org.eclipsercp.hyperbola.model.IContactsListener;
+import org.eclipsercp.hyperbola.model.Session;
+
+public class ContactsView extends ViewPart {
+
+	public static final String ID = "org.eclipsercp.hyperbola.views.contacts";
+	private TreeViewer treeViewer;
+	private Session session;
+	private HyperbolaAdapterFactory adapterFactory;
+	
+	public ContactsView() {
+		session = new Session();	
+	}
+
+	@Override
+	public void createPartControl(Composite parent) {
+		getSite().setSelectionProvider(buildTreeViewer(parent));
+		session.getRoot().addContactsListener(new IContactsListener() {			
+			public void contactsChanged(ContactsGroup contacts, ContactsEntry entry) {
+				treeViewer.refresh();
+			}
+		});
+		addFakeContactsToSession();
+	}
+
+	@Override
+	public void setFocus() {
+		treeViewer.getControl().setFocus();
+	}
+
+	private TreeViewer buildTreeViewer(Composite parent){	
+		adapterFactory = new HyperbolaAdapterFactory();
+		Platform.getAdapterManager().registerAdapters(adapterFactory, Contact.class);
+		treeViewer = new TreeViewer(parent, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL);
+		treeViewer.setLabelProvider(new WorkbenchLabelProvider());
+		treeViewer.setContentProvider(new BaseWorkbenchContentProvider());
+		treeViewer.setInput(session.getRoot());
+		return treeViewer;
+	}
+	
+	/**
+	 * temp method to fill fake model
+	 */
+	private void addFakeContactsToSession(){
+		
+		ContactsGroup root = session.getRoot();
+		ContactsGroup friends = new ContactsGroup(root, "Friends");
+		friends.addEntry(new ContactsEntry(friends, "Barry", "BWhite", "localhost"));
+		friends.addEntry(new ContactsEntry(friends, "Bill", "Billy", "localhost"));
+		root.addEntry(friends);
+		
+		ContactsGroup others = new ContactsGroup(root, "Others");
+		others.addEntry(new ContactsEntry(others, "Barry", "BWhite", "localhost"));
+		others.addEntry(new ContactsEntry(others, "Bill", "Billy", "localhost"));
+		root.addEntry(others);
+	}
+	
+	@Override
+	public void dispose() {
+		Platform.getAdapterManager().unregisterAdapters(adapterFactory);
+		super.dispose();
+	}
+}

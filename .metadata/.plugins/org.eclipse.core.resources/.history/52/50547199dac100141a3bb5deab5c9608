@@ -1,0 +1,13 @@
+package be.rds.msg;
+
+import br.rds.msg.IMessageProvider;
+
+public class MessageProviderDS implements IMessageProvider {
+
+	@Override
+	public String getMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

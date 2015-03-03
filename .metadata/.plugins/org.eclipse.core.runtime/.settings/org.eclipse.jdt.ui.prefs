@@ -1,0 +1,21 @@
+#Mon Mar 02 22:40:51 CET 2015
+content_assist_proposals_foreground=60,60,60
+spelling_locale_initialized=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+org.eclipse.jdt.ui.text.templates_migrated=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+content_assist_proposals_background=255,255,255
+org.eclipse.jdt.ui.formatterprofiles.version=11
+content_assist_number_of_computers=18
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.eclipse.jface.viewers.AbstractTreeViewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.ColumnViewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.StructuredViewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.IPostSelectionProvider"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.ISelectionProvider"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.ContentViewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.Viewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.IInputSelectionProvider"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.IInputProvider"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.TreeViewer"><rhs name\="org.eclipse.jface.viewers.TreeViewer"/></lhs><lhs name\="org.eclipse.jface.viewers.IBaseLabelProvider"><rhs name\="org.eclipse.ui.model.WorkbenchLabelProvider"/></lhs><lhs name\="org.eclipse.jface.viewers.IContentProvider"><rhs name\="org.eclipse.ui.model.BaseWorkbenchContentProvider"/></lhs><lhs name\="org.eclipsercp.hyperbola.model.Session"><rhs name\="org.eclipsercp.hyperbola.model.Session"/></lhs><lhs name\="org.eclipsercp.hyperbola.model.Contact"><rhs name\="org.eclipsercp.hyperbola.model.ContactsGroup"/><rhs name\="org.eclipsercp.hyperbola.model.ContactsEntry"/></lhs><lhs name\="org.eclipse.core.runtime.PlatformObject"><rhs name\="org.eclipsercp.hyperbola.model.ContactsGroup"/><rhs name\="org.eclipsercp.hyperbola.model.ContactsEntry"/></lhs><lhs name\="org.eclipse.core.runtime.IAdaptable"><rhs name\="org.eclipsercp.hyperbola.model.ContactsGroup"/><rhs name\="org.eclipsercp.hyperbola.model.ContactsEntry"/></lhs><lhs name\="org.eclipsercp.hyperbola.model.ContactsGroup"><rhs name\="org.eclipsercp.hyperbola.model.ContactsGroup"/></lhs><lhs name\="org.eclipse.core.runtime.IAdapterFactory"><rhs name\="org.eclipsercp.hyperbola.HyperbolaAdapterFactory"/></lhs><lhs name\="org.eclipsercp.hyperbola.HyperbolaAdapterFactory"><rhs name\="org.eclipsercp.hyperbola.HyperbolaAdapterFactory"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

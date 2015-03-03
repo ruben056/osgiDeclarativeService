@@ -1,0 +1,19 @@
+package be.rds.msg;
+
+import br.rds.msg.IMessageProvider;
+
+public class MessageConsumerDS {
+
+	private IMessageProvider msgProvider;
+	
+	public synchronized void setMsgProvider(IMessageProvider msgProvider){
+		System.out.println("Service was set. Thank you DS!");
+		this.msgProvider = msgProvider;
+		// I know I should not use the service here but just for demonstration
+		System.out.println(msgProvider.getMsg());
+	}
+	
+	public synchronized void unSetMsgProvider(){
+		this.msgProvider = null;
+	}
+}

@@ -1,0 +1,20 @@
+INDEX VERSION 1.126+/home/ruben/java/workspaceOSGIDeclarativeService/.metadata/.plugins/org.eclipse.jdt.core
+3899053298.index
+567498237.index
+2328252206.index
+2435929093.index
+3977493936.index
+2045263757.index
+4226147756.index
+4073349117.index
+798750034.index
+2861035061.index
+1530653160.index
+829816126.index
+2500366158.index
+1584379322.index
+466066742.index
+1707420863.index
+3140562224.index
+1516564492.index
+2165126272.index

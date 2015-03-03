@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.ui.IPageLayout"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.ContactsView"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.viewers.TreeViewer"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.model.WorkbenchLabelProvider"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.model.BaseWorkbenchContentProvider"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.model.IContactsListener"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.model.Session"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.model.WorkbenchAdapter"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.model.ContactsGroup"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.model.ContactsEntry"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.model.IWorkbenchAdapter"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.model.Contact"/>
+<fullyQualifiedTypeName name="org.eclipsercp.hyperbola.HyperbolaAdapterFactory"/>
+<fullyQualifiedTypeName name="org.eclipse.core.runtime.Platform"/>
+<fullyQualifiedTypeName name="be.rds.msg.MessageProvider"/>
+<fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+<fullyQualifiedTypeName name="br.rds.msg.IMessageProvider"/>
+</qualifiedTypeNameHistroy>

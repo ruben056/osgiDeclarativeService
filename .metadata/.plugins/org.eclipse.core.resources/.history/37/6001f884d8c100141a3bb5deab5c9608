@@ -1,0 +1,18 @@
+package be.rds.msg.consumer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+public class Activator implements BundleActivator {
+
+	public void start(BundleContext context) throws Exception {
+		ServiceReference<IMess> ref = 
+			bundleContext.getServiceReference(IMessagingService.class);
+	msgService = bundleContext.getService(ref);
+	}
+
+	public void stop(BundleContext context) throws Exception {
+	}
+
+}

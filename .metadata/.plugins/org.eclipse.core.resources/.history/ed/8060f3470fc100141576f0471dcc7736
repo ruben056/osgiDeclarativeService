@@ -1,0 +1,70 @@
+package org.eclipsercp.hyperbola;
+
+import org.eclipse.core.runtime.IAdapterFactory;
+import org.eclipse.jface.resource.ImageDescriptor;
+import org.eclipse.ui.model.IWorkbenchAdapter;
+import org.eclipse.ui.model.WorkbenchAdapter;
+import org.eclipsercp.hyperbola.model.ContactsEntry;
+import org.eclipsercp.hyperbola.model.ContactsGroup;
+
+public class HyperbolaAdapterFactory implements IAdapterFactory {
+
+	public Object getAdapter(Object adaptableObject, Class adapterType) {
+		if(adapterType == WorkbenchAdapter.class)
+		{
+			if(adaptableObject instanceof ContactsGroup){
+				
+			}
+			else if(adaptableObject instanceof ContactsEntry){
+				
+			}
+		}
+		return null;
+	}
+
+	public Class[] getAdapterList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	private IWorkbenchAdapter groupAdapter = new IWorkbenchAdapter() {		
+		public Object getParent(Object o) {
+			return ((ContactsGroup)o).getParent();
+		}
+		
+		public String getLabel(Object o) {
+			return ((ContactsGroup)o).getName();
+		}
+		
+		public ImageDescriptor getImageDescriptor(Object object) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		public Object[] getChildren(Object o) {
+			return ((ContactsGroup)o).getEntries();
+		}
+	};
+	
+	private IWorkbenchAdapter entryAdapter = new IWorkbenchAdapter() {		
+		public Object getParent(Object o) {
+			return ((ContactsEntry)o).getParent();
+		}
+		
+		public String getLabel(Object o) {
+			ContactsEntry entry = (ContactsEntry)o;
+			return entry.getName() + " - " + entry.getServer()
+		}
+		
+		public ImageDescriptor getImageDescriptor(Object object) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		public Object[] getChildren(Object o) {
+			return ((ContactsEntry)o).getEntries();
+		}
+	};
+
+}

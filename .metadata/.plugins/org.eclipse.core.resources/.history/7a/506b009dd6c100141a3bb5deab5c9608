@@ -1,0 +1,6 @@
+package br.rds.msg.api.provider;
+
+public interface IMessageProvider {
+
+	String getMsg();
+}

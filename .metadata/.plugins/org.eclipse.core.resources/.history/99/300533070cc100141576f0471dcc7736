@@ -1,0 +1,38 @@
+package org.eclipsercp.hyperbola;
+
+import org.eclipse.jface.viewers.TreeViewer;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipsercp.hyperbola.model.Session;
+
+public class ContactsView extends ViewPart {
+
+	public static final String ID = "org.eclipsercp.hyperbola.views.contacts";
+	private TreeViewer treeViewer;
+	private Session session;
+	
+	public ContactsView() {
+		
+	}
+
+	@Override
+	public void createPartControl(Composite parent) {
+		initializeSession();
+		treeViewer = new TreeViewer(parent, SWT.BORDER | SWT.MULTI | SWT.V_SCROLL);
+	}
+
+	@Override
+	public void setFocus() {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	/**
+	 * temp method to fill fake model
+	 */
+	private void initializeSession(){
+		
+	}
+}
